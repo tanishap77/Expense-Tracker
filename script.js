@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:5500";
+const API_URL = "https://50cf7cd0-11d1-40e0-817c-f04c359a862a-00-1xrtomvsnfzbz.sisko.replit.dev";
+
 
 const form = document.getElementById("expense-form");
 const expenseList = document.getElementById("expense-list");
