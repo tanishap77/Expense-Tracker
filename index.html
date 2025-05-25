@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">💸 Personal Expense Tracker</h1>
+    <h2 class="text-xl font-semibold mt-4">Total Spent: ₹<span id="total-spent">0</span></h2>
+
+    <!-- Add Expense Form -->
+    <form id="expense-form" class="grid gap-4 mb-6">
+      <input type="number" id="amount" placeholder="Amount" required class="p-2 border rounded w-full" />
+      <input type="text" id="category" placeholder="Category (e.g., Food, Travel)" required class="p-2 border rounded w-full" />
+      <input type="date" id="date" required class="p-2 border rounded w-full" />
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add Expense</button>
+    </form>
+
+    <!-- Expenses List -->
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto text-left border-collapse">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="p-2">Amount</th>
+            <th class="p-2">Category</th>
+            <th class="p-2">Date</th>
+            <th class="p-2">Action</th>
+          </tr>
+        </thead>
+        <tbody id="expense-list" class="bg-white">
+          <!-- Expense rows will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
